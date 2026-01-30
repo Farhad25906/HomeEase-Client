@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import Home from "../Pages/Home";
 import Main from "../Layout/Main";
-import SignIn from "../Pages/Signin";
+import SignIn from "../Pages/SignIn";
 
 import Dashboard from "../Layout/Dashboard";
 import SignUpFlow from "../Components/SharedComponets/SignUpFlow";
@@ -34,7 +34,7 @@ export const router = createBrowserRouter([
         path: "/services",
         element: <ServicesPage />,
       },
-      
+
       {
         path: "/booking/:serviceId",
         element: <BookingPage />,
@@ -66,7 +66,7 @@ export const router = createBrowserRouter([
         path: "/dashboard/my-reviews",
         element: <MyReviews />,
       },
-      
+
       //provider routes
       {
         path: "/dashboard/addServices",
